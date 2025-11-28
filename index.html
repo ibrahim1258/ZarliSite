@@ -11,6 +11,7 @@
             padding: 0;
             background: #f2f7ff;
             color: #222;
+            transition: all 0.3s;
         }
         header {
             background: #4a90e2;
@@ -60,6 +61,20 @@
             text-align: center;
             margin-top: 40px;
         }
+        .theme-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .theme-btn:hover {
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
@@ -72,8 +87,11 @@
     </nav>
 
     <div class="hero">
-        <h1>مرحبًا بكم في حضّانة عالم سنافر</h1>
-        <p>الأمان – التعلم – المرح</p>
+        <img src="logo-smurfs.png" alt="عالم السنافر" style="max-width:200px; margin-bottom:20px;" />
+        <h1>حضّانة عالم السنافر - Smurfs World</h1>
+        <p>لتنمية قدرات ومهارات الطفل</p>
+        <p>لغات - عربي - قرآن كريم</p>
+        <p>أنشطة وألعاب رياضية</p>
     </div>
 
     <div class="section" id="about">
@@ -99,12 +117,39 @@
         <div class="card">
             <h2>التواصل</h2>
             <p>رقم الهاتف: 01000000000</p>
-            <p>العنوان: ____</p>
+            <p>العنوان: دهمتفرع من شارع محمد عامر جاب الله بجوار اتيليه ملك روحي، امتداد عمارة السوداني، Abou Hommos, Egypt, 44661</p>
+            <p>صفحة الفيس بوك: <a href="https://www.facebook.com/share/1BgTBcFGCj/" target="_blank">اضغط هنا</a></p>
         </div>
     </div>
 
     <footer>
         جميع الحقوق محفوظة &copy; حضّانة عالم سنافر
     </footer>
+
+    <button class="theme-btn" onclick="toggleTheme()">تغيير الثيم</button>
+
+    <script>
+        let isColorTheme = true;
+        function toggleTheme() {
+            if(isColorTheme) {
+                // ثيم أبيض وأسود
+                document.body.style.background = 'white';
+                document.body.style.color = 'black';
+                document.querySelector('header').style.background = '#000';
+                document.querySelector('footer').style.background = '#000';
+                document.querySelector('nav').style.background = '#333';
+                document.querySelectorAll('.card').forEach(c => c.style.background = '#f9f9f9');
+            } else {
+                // ثيم ألوان الأطفال
+                document.body.style.background = '#f2f7ff';
+                document.body.style.color = '#222';
+                document.querySelector('header').style.background = '#4a90e2';
+                document.querySelector('footer').style.background = '#2c6bb2';
+                document.querySelector('nav').style.background = '#2c6bb2';
+                document.querySelectorAll('.card').forEach(c => c.style.background = 'white');
+            }
+            isColorTheme = !isColorTheme;
+        }
+    </script>
 </body>
 </html>
