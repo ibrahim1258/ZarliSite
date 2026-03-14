@@ -1,0 +1,173 @@
+﻿<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ZARLI | تخفيضات رجالي</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">ZARLI MEN | تخفيضات رجالي لفترة محدودة</div>
+
+    <header class="siteHeader">
+      <div class="headerInner">
+        <a class="brand" href="#" aria-label="Zarli">
+          <img src="assets/logo.png" alt="ZARLI" />
+          <span class="brandTag">Menswear • Egypt</span>
+        </a>
+        <nav class="nav">
+          <a href="#" class="active">رجالي</a>
+          <a href="#">تيشيرتات</a>
+          <a href="#">قمصان</a>
+          <a href="#">بناطيل</a>
+          <a href="#">أحذية</a>
+          <a href="#">إكسسوارات</a>
+        </nav>
+        <div class="actions">
+          <a class="whatsBtn" href="https://wa.me/201121770453" target="_blank" rel="noopener">
+            واتساب الطلبات
+          </a>
+          <button id="cartBtn" class="cartBtn" type="button" aria-haspopup="dialog" aria-controls="cartDialog">
+            السلة <span id="cartCount" class="badge">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div class="heroCopy">
+          <div class="crumbs">الرئيسية / رجالي / التخفيضات</div>
+          <h1>تخفيضات رجالي</h1>
+          <p>اختيار ترابي كلاسيك يناسب الاستايل اليومي والسهرة. اطلب واتساب مباشرة.</p>
+          <div class="heroPills">
+            <span class="pill">قطن فاخر</span>
+            <span class="pill">قصّات عصرية</span>
+            <span class="pill">تسليم سريع</span>
+          </div>
+          <div class="heroActions">
+            <a class="heroBtn" href="#grid">تسوق التخفيضات</a>
+            <a class="heroGhost" href="#filtersPanel">فلترة الموديلات</a>
+          </div>
+        </div>
+        <div class="heroVisual">
+          <div class="heroPanel">
+            <div class="heroBadge">SALE</div>
+            <div class="heroWord">ZARLI</div>
+            <div class="heroLine">MEN / EGYPT</div>
+          </div>
+          <div class="heroCard">
+            <div class="heroCardTitle">اختيار ستايلك</div>
+            <div class="heroStat">
+              <span>خصم متوسط</span>
+              <strong>35%</strong>
+            </div>
+            <div class="heroStat">
+              <span>الأكثر طلبًا</span>
+              <strong>تيشيرتات</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolbar">
+        <div id="resultsCount" class="results">تحميل المنتجات...</div>
+        <div class="toolbarRight">
+          <input id="search" class="input" type="search" placeholder="ابحث في التخفيضات" />
+          <select id="sort" class="input">
+            <option value="featured">الأفضل</option>
+            <option value="price-asc">السعر: الأقل للأعلى</option>
+            <option value="price-desc">السعر: الأعلى للأقل</option>
+            <option value="discount-desc">الأكبر خصمًا</option>
+          </select>
+        </div>
+      </section>
+
+      <div class="layout">
+        <aside class="filters" id="filtersPanel">
+          <div class="filterHeader">
+            <div>فلترة</div>
+            <button id="clearFilters" class="linkBtn" type="button">مسح الكل</button>
+          </div>
+
+          <div class="filterGroup">
+            <div class="filterTitle">الأقسام</div>
+            <div id="filterCategories" class="filterList"></div>
+          </div>
+
+          <div class="filterGroup">
+            <div class="filterTitle">المقاسات</div>
+            <div id="filterSizes" class="filterList"></div>
+          </div>
+
+          <div class="filterGroup">
+            <div class="filterTitle">الألوان</div>
+            <div id="filterColors" class="filterList"></div>
+          </div>
+
+          <div class="filterGroup">
+            <div class="filterTitle">السعر (جنيه)</div>
+            <div class="priceRange">
+              <input id="priceMin" class="input" type="number" placeholder="من" />
+              <input id="priceMax" class="input" type="number" placeholder="إلى" />
+            </div>
+          </div>
+        </aside>
+
+        <section class="catalog">
+          <div id="grid" class="grid" aria-live="polite"></div>
+          <div id="empty" class="empty hidden">مفيش منتجات مطابقة للبحث.</div>
+        </section>
+      </div>
+    </main>
+
+    <dialog id="cartDialog" class="dialog">
+      <form method="dialog" class="dialogInner" id="cartForm">
+        <div class="dialogHeader">
+          <div>
+            <div class="dialogTitle">طلب واتساب</div>
+            <div class="dialogSubtitle">راجع اختيارك قبل الإرسال</div>
+          </div>
+          <button class="iconBtn" value="cancel" aria-label="إغلاق">✕</button>
+        </div>
+
+        <div id="cartItems" class="cartItems"></div>
+
+        <div class="checkout">
+          <div class="checkoutTitle">بيانات العميل</div>
+          <div class="fields">
+            <label class="field">
+              <span>الاسم</span>
+              <input id="name" class="input" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>الموبايل</span>
+              <input id="phone" class="input" inputmode="tel" autocomplete="tel" required />
+            </label>
+            <label class="field full">
+              <span>العنوان</span>
+              <input id="address" class="input" autocomplete="street-address" required />
+            </label>
+            <label class="field full">
+              <span>ملاحظات (اختياري)</span>
+              <textarea id="notes" class="input" rows="3"></textarea>
+            </label>
+          </div>
+
+          <div class="summary">
+            <div>الإجمالي</div>
+            <div id="cartTotal" class="totalValue">0 جنيه</div>
+          </div>
+
+          <div class="actionsRow">
+            <button id="clearCart" class="btn secondary" type="button">تفريغ السلة</button>
+            <button id="submitOrder" class="btn primary" type="submit">إرسال الطلب على واتساب</button>
+          </div>
+          <div id="status" class="status" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
