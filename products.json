@@ -1,0 +1,152 @@
+﻿[
+  {
+    "id": "tee-oversize",
+    "sku": "MEN-TEE-001",
+    "title": "تيشيرت أوفرسايز قطن",
+    "category": "تيشيرتات",
+    "price": 420,
+    "salePrice": 299,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["أسود", "أبيض", "رمادي"]
+  },
+  {
+    "id": "tee-printed",
+    "sku": "MEN-TEE-002",
+    "title": "تيشيرت بطباعة خفيفة",
+    "category": "تيشيرتات",
+    "price": 380,
+    "salePrice": 249,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["أسود", "بيج", "أخضر"]
+  },
+  {
+    "id": "shirt-oxford",
+    "sku": "MEN-SHT-010",
+    "title": "قميص أوكسفورد كلاسيك",
+    "category": "قمصان",
+    "price": 650,
+    "salePrice": 499,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "colors": ["أبيض", "أزرق فاتح"]
+  },
+  {
+    "id": "shirt-linen",
+    "sku": "MEN-SHT-011",
+    "title": "قميص كتان خفيف",
+    "category": "قمصان",
+    "price": 720,
+    "salePrice": 529,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["بيج", "أوف وايت"]
+  },
+  {
+    "id": "hoodie-basic",
+    "sku": "MEN-HOD-020",
+    "title": "هودي بسيط",
+    "category": "هوديز",
+    "price": 980,
+    "salePrice": 749,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "colors": ["أسود", "رمادي", "زيتي"]
+  },
+  {
+    "id": "sweatshirt",
+    "sku": "MEN-SWT-021",
+    "title": "سويت شيرت قطن",
+    "category": "سويت شيرت",
+    "price": 850,
+    "salePrice": 649,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["كحلي", "رمادي"]
+  },
+  {
+    "id": "jacket-denim",
+    "sku": "MEN-JCK-030",
+    "title": "جاكيت دنيم",
+    "category": "جاكيتات",
+    "price": 1350,
+    "salePrice": 999,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["أزرق فاتح", "أزرق غامق"]
+  },
+  {
+    "id": "jacket-leather",
+    "sku": "MEN-JCK-031",
+    "title": "جاكيت جلد صناعي",
+    "category": "جاكيتات",
+    "price": 1650,
+    "salePrice": 1249,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["أسود"]
+  },
+  {
+    "id": "jeans-slim",
+    "sku": "MEN-JNS-040",
+    "title": "بنطلون جينز سليم",
+    "category": "جينز",
+    "price": 950,
+    "salePrice": 699,
+    "sizes": ["30", "32", "34", "36"],
+    "colors": ["أزرق غامق", "أسود"]
+  },
+  {
+    "id": "chino",
+    "sku": "MEN-PNT-041",
+    "title": "بنطلون تشينو",
+    "category": "بناطيل",
+    "price": 890,
+    "salePrice": 649,
+    "sizes": ["30", "32", "34", "36"],
+    "colors": ["بيج", "كحلي"]
+  },
+  {
+    "id": "short-linen",
+    "sku": "MEN-SHR-042",
+    "title": "شورت كتان",
+    "category": "شورتات",
+    "price": 520,
+    "salePrice": 389,
+    "sizes": ["M", "L", "XL"],
+    "colors": ["بيج", "أوف وايت"]
+  },
+  {
+    "id": "sneakers",
+    "sku": "MEN-SHO-050",
+    "title": "سنيكرز كلاسيك",
+    "category": "أحذية",
+    "price": 1750,
+    "salePrice": 1299,
+    "sizes": ["41", "42", "43", "44"],
+    "colors": ["أبيض", "أسود"]
+  },
+  {
+    "id": "loafer",
+    "sku": "MEN-SHO-051",
+    "title": "لوفر جلد",
+    "category": "أحذية",
+    "price": 1650,
+    "salePrice": 1199,
+    "sizes": ["41", "42", "43", "44"],
+    "colors": ["أسود", "بني"]
+  },
+  {
+    "id": "cap",
+    "sku": "MEN-ACC-060",
+    "title": "كاب بسيط",
+    "category": "إكسسوارات",
+    "price": 240,
+    "salePrice": 169,
+    "sizes": [],
+    "colors": ["أسود", "كحلي"]
+  },
+  {
+    "id": "belt",
+    "sku": "MEN-ACC-061",
+    "title": "حزام جلد",
+    "category": "إكسسوارات",
+    "price": 360,
+    "salePrice": 259,
+    "sizes": ["M", "L"],
+    "colors": ["أسود", "بني"]
+  }
+]
